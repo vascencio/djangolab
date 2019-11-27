@@ -1,0 +1,24 @@
+# Shift + Control + P para entrar en modo configuracion en VScode para configurar sftp en vscode.
+{
+        "name": "djangolabs",
+        "protocol": "sftp",
+        "host": "<ip o dominio>",
+        "remotePath": "/home/ubuntu/django-apache-nginx-uwsgi-vps-ubuntu",
+        "privateKeyPath": "E:\\PROYECTOS\\AWS\\file.pem",
+        "username": "ubuntu",
+        "port": 22,
+        "secure": true,
+        "uploadOnSave": true,
+        "passive": false,
+        "debug": true,
+        "ignore": [
+            "\\.vscode",
+            "\\.git",
+            "\\.DS_Store"
+        ],
+        "generatedFiles": {
+            "uploadOnSave": true,
+            "extensionsToInclude": [],
+            "path": "./"
+        }
+    }
