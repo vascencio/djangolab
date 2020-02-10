@@ -1,1 +1,29 @@
-<h1>Configurar servidor productivo para Django  </h1>
+Configurar servidor productivo para Django 
+
+Este tutorial esta destinado para el despliegue de Django con NGinx - Uwsgi en un entorno de una maquina virtual en Ubuntu linux 18.04.
+
+Pre-requistios:
+
+1- Cuenta de AWS.
+2- Instancia de EC2 con Ubuntu 18.04 
+3- Acceso via SSH a la instancia EC2.
+
+Pasos a seguir:
+
+1- En la instancia EC2 con el usuario default (ubuntu) para AWS. 
+
+En el directorio de inicio por defecto
+
+ubuntu@ip_xxx.xxx.xxx~$ pwd
+/home/ubuntu
+
+Instalamos el entorno virtual para python:
+
+sudo apt-get install python3-venv
+
+Durante la instalacion de crea el directorio para iniciar el entorno virtual. 
+
+ubuntu@ip-172-31-XX-XX:~$ ls -lrt | grep venv
+drwxrwxr-x  6 ubuntu ubuntu 4096 Nov 24 07:42 venv
+
+
